@@ -26,6 +26,13 @@ LOGS =>
 
 */
 
+/*
+I: takes in a parameter of a number
+O: different levels of a triangle
+C: Use nested for loops
+E:
+*/
+
 function triangles() {
   
 }
@@ -47,9 +54,36 @@ on the number:
   - if the number is not divisible by 3 or 5, log the number
 */
 
-function fizzBuzz(start, end) {
-  
+/*
+I: takes in two parameters that represent numbers
+O: log different statements depending on the divisibiilty of the numbers
+   if the number is divisible by both 3 & 5, log "fizzbuzz"
+   if the number is divisible by 5, log "buzz"
+   if the number is divisible by 3, log "fizz"
+   if the number is not divisible by 3 or 5, log the number
+C:
+E:
+*/
+
+function fizzBuzz(start, end){
+  // use a foor loop to iterate through the inout numbers
+  for(var i = start; i <= end; i++){
+    // check if the current number is divisible by 3 & 5
+    if(i % 3 === 0 && i % 5 === 0){
+      console.log("fizzbuzz")
+      // check if current number is divisible by 5
+    } else if (i % 5 === 0){
+      console.log("buzz")
+      // check if the current number is divisible by 3
+    } else if (i % 3 === 0){
+      console.log("fizz")
+      // if not divisible by 3 or 5 log the nuber
+    } else {
+      console.log(i)
+    }
+  }
 }
+ 
 
 ////////////////////////////////////////////////////////////////////////////////
 // drawChessboard //////////////////////////////////////////////////////////////
