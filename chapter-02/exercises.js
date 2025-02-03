@@ -29,13 +29,24 @@ LOGS =>
 /*
 I: takes in a parameter of a number
 O: different levels of a triangle
-C: Use nested for loops
+C: use for loop
 E:
 */
 
-function triangles() {
-  
+function triangles(size) {
+  // use for loop to iterate through as many times as the size of the triangle
+  for(let i = 1; i <= size; i++){
+    // declare row in outer loop as a place holder
+    let row = ""
+  // j <= i so that the number of # corresponds to the number in the size of the outer loop
+  for(let j = 1; j <= i; j++){
+    // row doesnt need to be declared to a variable in inner loop already being held by let row = "" in outer loop
+     row += "#"
+  }
+  console.log(row)
+  }
 }
+  
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -115,8 +126,34 @@ LOGS =>
 
 */
 
-function drawChessboard(x) {
+/*
+I: Takes in a string that represents the size of a chessboard
+O: strings that represent the pattern of a chesboard
+C: needs to use line break characters
+E:
+*/
 
+function drawChessboard(x) {
+// set an empty string to hold the chessboard
+  var checker = "";
+// loop through each row 
+  for(var i = 0; i < x; i++){
+    // empty string for new row
+    var string = "";
+ // iterate though to creat a column fro the chessboard 
+  for(var j = 0; j < x; j++){
+    // 
+    if((i + j) % 2 === 0){
+      // adds an empty space if it is an even number
+      string += " ";
+    } else {
+      // adds a hashtag if it is an odd number
+      string += "#";
+    }
+  }
+  // contnue adding row as long as the chessboard is newline charcter to move to next line
+   checker += string + "\n"
+  }
 
 }
 
