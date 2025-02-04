@@ -47,7 +47,15 @@ if (number % 2 === 0){
 // countChars //////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function countChars() {
+/*
+I: takes in a string and a character string that indicates charcter to be counted
+O: returns a number of how many character strings are in the string
+C:
+E:
+*/
+
+
+function countChars(string, char) {
 
 }
 
@@ -55,7 +63,15 @@ function countChars() {
 // countBs /////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function countBs() {
+/*
+I: takes in a string
+O: returns a number of how many "B"s are in the string
+C:
+E:
+*/
+
+
+function countBs(string) {
 
 }
 
