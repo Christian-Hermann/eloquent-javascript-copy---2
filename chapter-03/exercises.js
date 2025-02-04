@@ -56,7 +56,17 @@ E:
 
 
 function countChars(string, char) {
-
+  // initialize counter to start at zero
+ var count = 0;
+ // iterate through the string
+for(var i = 0; i < string.length; i++){
+  // chekc to see if element is equal to given character
+  if(string[i] === char){
+    // if found increment each time
+    count ++
+  }
+}
+return count
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -72,6 +82,17 @@ E:
 
 
 function countBs(string) {
+  // intitalize a counter to start at zero
+  var count = 0
+  // iterate through the for loop string
+  for(var i = 0; i < string.length; i++){
+    // check to see if element is eqaul to string "B"
+    if(string[i] === "B"){
+      // increment the count each time "B" is found
+      count ++
+    }
+  }
+  return count
 
 }
 
