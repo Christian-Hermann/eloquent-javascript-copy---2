@@ -2,9 +2,19 @@
 // min /////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function min(num1, num2) {
+/*
+I: takes in two numbers
+O: returns the smallest argument
+C: NA 
+E: NA
+
+*/
+function min(num1, num2){
+  // check to see if num1 is less than num2
 if (num1 < num2){
+  // if less return num1
   return num1
+  // otherwise return num2
 } else {
   return num2
 }
@@ -14,8 +24,23 @@ if (num1 < num2){
 // isEven //////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function isEven() {
+/*
+I: takes in a number parameter
+O: returns a boolean
+C: 
+E:
+*/
 
+
+function isEven(number) {
+  // check to see if number is even 
+if (number % 2 === 0){
+  // if number us even return true
+  return true 
+  // if number is not even return flase
+} else {
+  return false
+}
 }
 
 ////////////////////////////////////////////////////////////////////////////////
