@@ -37,7 +37,7 @@ function isEven(number) {
 if (number % 2 === 0){
   // if number us even return true
   return true 
-  // if number is not even return flase
+  // if number is not even return false
 } else {
   return false
 }

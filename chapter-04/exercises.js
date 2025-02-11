@@ -2,7 +2,38 @@
 // range ///////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function range() {
+/*
+I: takes two numbers start and end
+O: ann array of all the number between start and end 
+C: NA
+E: NA
+*/
+
+function range(start, end, step = 1) {
+ 
+ 
+  let output = [];
+ // return an emtpy array if range is the same
+if (start === end){
+  return []
+}
+
+
+
+if (step > 0){
+  for (let i = start; i <= end; i += step){
+    output.push(i)
+  }
+} else if (step < 0){
+  for (let i = start; i >= end; i += step){
+    output.push(i)
+  }
+}
+
+
+
+
+return output
 
 }
 
@@ -10,9 +41,25 @@ function range() {
 // sum /////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function sum() {
+/*
+I: Takes in an array of numbers 
+O: return the sum of these numbers
+C: NA
+E: NA
+*/
 
+function sum(array) {
+ // initialize an empty variable to hold the output number
+  let output = 0
+ // use a for loop to iterate through the numbers array
+  for (let i = 0; i < array.length; i++){
+  // add output to each iteration 
+    output += array[i]
+  }
+  // return added output
+  return output
 }
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // reverseArray ////////////////////////////////////////////////////////////////
