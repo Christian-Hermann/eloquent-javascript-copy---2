@@ -65,13 +65,35 @@ function sum(array) {
 // reverseArray ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function reverseArray() {
+/*
+I: takes an input array of numbers
+O: reverses the elements of the array
+C: NA
+E: NA
+*/
 
+
+function reverseArray(array) {
+// initiialize an empty array to hold value
+  let output = [];
+// iterate throught the array backwards starting at the end of the array
+  for (let i = array.length - 1; i >= 0; i--){
+    // push new elements reversed into output array
+       output.push(array[i])
+  }
+return output
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // reverseArrayInPlace /////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
+
+/*
+I: 
+O: 
+C: NA
+E: NA
+*/
 
 function reverseArrayInPlace() {
 
