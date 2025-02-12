@@ -89,13 +89,21 @@ return output
 ////////////////////////////////////////////////////////////////////////////////
 
 /*
-I: 
-O: 
+I: array
+O: array
 C: NA
 E: NA
 */
 
-function reverseArrayInPlace() {
+function reverseArrayInPlace(array) {
+
+  for (let i = 0; i < Math.floor(array.length / 2); i++){
+    let element = array[i]
+    array[i] = array[array.length - 1 - i];
+    array[array.length - 1 - i] = element;
+  }
+
+  return array
 
 }
 
